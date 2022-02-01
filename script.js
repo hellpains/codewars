@@ -55,6 +55,11 @@ function positiveSum(arr) {
 
 
 //-----------------------задача-7
+function findNeedle(haystack) {
+	if (haystack.includes("needle")) {
+		return "found the needle at position " + haystack.indexOf("needle")
+	}
+}
 
 
 //-----------------------задача-8
