@@ -63,6 +63,10 @@ function findNeedle(haystack) {
 
 
 //-----------------------задача-8
+function getEvenNumbers(numbersArray) {
+	return numbersArray.filter(x => x % 2 == 0)
+}
+
 
 
 //-----------------------задача-9
