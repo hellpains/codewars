@@ -1,11 +1,11 @@
 console.log('Привет Github');
 
-// Первая задача
+// Первая задача-1
 function solution(str) {
 	return str.split('').reverse().join('')
 }
 
-// Вторая задача
+// Вторая задача-2
 function booleanToString(b) {
 	if (b === true) {
 		return 'true'
@@ -14,7 +14,7 @@ function booleanToString(b) {
 	}
 }
 
-// Третья задача
+// Третья задача-3
 function boolToWord(bool) {
 	if (bool == true) {
 		return 'Yes'
@@ -23,7 +23,7 @@ function boolToWord(bool) {
 	}
 }
 
-
+//-----------------------задача-4
 function arrayPlusArray(arr1, arr2) {
 	let sum1 = 0;
 	let sum2 = 0
@@ -35,3 +35,35 @@ function arrayPlusArray(arr1, arr2) {
 	};
 	return sum1 + sum2;
 }
+
+//-----------------------задача-5
+function stringToArray(string) {
+	return string.split(' ')
+}
+
+
+//-----------------------задача-6
+
+
+//-----------------------задача-7
+
+
+//-----------------------задача-8
+
+
+//-----------------------задача-9
+
+
+//-----------------------задача-10
+
+
+//-----------------------задача-11
+
+
+//-----------------------задача-12
+
+
+//-----------------------задача-13
+
+
+//-----------------------задача-14
