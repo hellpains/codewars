@@ -120,6 +120,14 @@ function sumEvenNumbers(input) {
 
 
 //----------------------------------------------------13
+var greet_abe = function () {
+	var name = 'Abe';
+	return "Hello, " + name + '!';
+};
+var name = 'Ben';
+var greet_ben = function () {
+	return "Hello, " + name + '!';
+};
 
 
 //----------------------------------------------------14
