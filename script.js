@@ -161,28 +161,6 @@ function getMiddle(s) {
 
 
 //----------------------------------------------------18
-var superSecretChars = [['a', '@'], ['s', '$'], ['o', '0'], ['h', '5'], ['x', '*']];
-function createSSP(password) {
-	let arr = password.split('')
-	for (let elem of arr) {
-		if (elem == 'a') {
-			elem = '@';
-		} else if (elem == 's') {
-			elem = '$';
-		} else if (elem == 'o') {
-			elem = '0';
-		} else if (elem == 'h') {
-			elem = '5'
-		} else if (elem == 'x') {
-			elem = '*'
-		}
-	}
-	return arr.join('')
-}
-console.log(createSSP('rustamxh'));
-
-
-//----------------------------------------------------19
 function well(x) {
 	let good = 0;
 	for (let elem of x) {
@@ -199,6 +177,15 @@ function well(x) {
 		return 'Fail!'
 	}
 }
+
+
+//----------------------------------------------------19
+function stringClean(s) {
+	return s.split('').filter(x => !(x == 1 || x == 2 || x == 3 || x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9 || x == '0')).join('')
+}
+
+
+
 
 //----------------------------------------------------20
 
