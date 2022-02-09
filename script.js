@@ -161,11 +161,44 @@ function getMiddle(s) {
 
 
 //----------------------------------------------------18
+var superSecretChars = [['a', '@'], ['s', '$'], ['o', '0'], ['h', '5'], ['x', '*']];
+function createSSP(password) {
+	let arr = password.split('')
+	for (let elem of arr) {
+		if (elem == 'a') {
+			elem = '@';
+		} else if (elem == 's') {
+			elem = '$';
+		} else if (elem == 'o') {
+			elem = '0';
+		} else if (elem == 'h') {
+			elem = '5'
+		} else if (elem == 'x') {
+			elem = '*'
+		}
+	}
+	return arr.join('')
+}
+console.log(createSSP('rustamxh'));
 
 
 //----------------------------------------------------19
+function well(x) {
+	let good = 0;
+	for (let elem of x) {
+		if (elem === 'good') {
+			good += 1;
+		}
+	}
 
-
+	if (good == 1 || good == 2) {
+		return 'Publish!'
+	} else if (good > 1) {
+		return 'I smell a series!'
+	} else if (good === 0) {
+		return 'Fail!'
+	}
+}
 
 //----------------------------------------------------20
 
