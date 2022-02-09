@@ -150,6 +150,14 @@ function greet(name) {
 
 
 //----------------------------------------------------17
+function getMiddle(s) {
+	let num = s.length / 2
+	if (s.length % 2 == 1) {
+		return s[Math.floor(num)]
+	} else if (s.length % 2 == 0) {
+		return s[num - 1] + s[num]
+	}
+}
 
 
 //----------------------------------------------------18
