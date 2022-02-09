@@ -131,6 +131,9 @@ var greet_ben = function () {
 
 
 //----------------------------------------------------14
+function reverseWords(str) {
+	return str.split(' ').reverse().join(' '); // reverse those words
+}
 
 
 //----------------------------------------------------15
