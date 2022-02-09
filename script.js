@@ -107,6 +107,16 @@ function countDevelopers(list) {
 
 
 //----------------------------------------------------12
+function sumEvenNumbers(input) {
+	let sum = 0;
+	for (let elem of input) {
+		if (elem % 2 == 0) {
+			sum += elem
+		}
+	}
+	return sum
+}
+
 
 
 //----------------------------------------------------13
