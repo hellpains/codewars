@@ -137,6 +137,10 @@ function reverseWords(str) {
 
 
 //----------------------------------------------------15
+function twoSort(s) {
+	let result = s.sort()
+	return result[0].split('').join('***')
+}
 
 
 //----------------------------------------------------16
