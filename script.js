@@ -193,6 +193,9 @@ function fixTheMeerkat(arr) {
 }
 
 //----------------------------------------------------21
+function greet(name) {
+	return `Hello, ${name} how are you doing today?`
+}
 
 
 //----------------------------------------------------22
