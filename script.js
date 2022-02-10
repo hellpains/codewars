@@ -223,6 +223,15 @@ function trouble(x, t) {
 
 
 //----------------------------------------------------25
+function countSheeps(arr) {
+	let count = 0;
+	for (let elem of arr) {
+		if (elem === true) {
+			count += 1;
+		}
+	}
+	return count;
+}
 
 
 //----------------------------------------------------26
