@@ -246,6 +246,23 @@ function areYouPlayingBanjo(name) {
 
 
 //----------------------------------------------------27
+function orderFood(list) {
+	let objCountMeal = {}
+	for (let elem of list) {
+		if (elem['meal'] == 'vegetarian') {
+			('vegetarian' in objCountMeal) ? objCountMeal['vegetarian'] += 1 : objCountMeal['vegetarian'] = 1
+		} else if (elem['meal'] == 'standard') {
+			('standard' in objCountMeal) ? objCountMeal['standard'] += 1 : objCountMeal['standard'] = 1
+		} else if (elem['meal'] == 'vegan') {
+			('vegan' in objCountMeal) ? objCountMeal['vegan'] += 1 : objCountMeal['vegan'] = 1
+		} else if (elem['meal'] == 'diabetic') {
+			('diabetic' in objCountMeal) ? objCountMeal['diabetic'] += 1 : objCountMeal['diabetic'] = 1
+		} else if (elem['meal'] == 'gluten-intolerant') {
+			('gluten-intolerant' in objCountMeal) ? objCountMeal['gluten-intolerant'] += 1 : objCountMeal['gluten-intolerant'] = 1
+		}
+	}
+	return objCountMeal;
+}
 
 
 //----------------------------------------------------28
