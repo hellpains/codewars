@@ -263,20 +263,44 @@ function orderFood(list) {
 
 function removeSmallest(numbers) {
     let minNum = numbers[0]
+    let newArr123=[]
     for (let i = 1; i < numbers.length; i++) {
         if (minNum > numbers[i]) {
             minNum=numbers[i]
-            i--
+
         }
     }
-    let myIndex=numbers.indexOf(minNum);
-    if (myIndex !== -1) {
-        numbers.splice(myIndex, 1);
+    let str=numbers.length-newArr123.length
+    let newArr123123=[]
+    for(let i =0;i<str-1;i++){
+        if(str>1){
+            newArr123123.push(minNum)
+        }
     }
-    return numbers
+    for(let j=0;j<numbers.length;j++){
+        if(numbers[j] !==minNum){
+            newArr123=numbers[j]
+        }
+    }
+    return newArr123
 }
 
 //----------------------------------------------------29
+
+function fakeBin(x){
+    let arr=x.split('')
+    for(let i=0;i<arr.length;i++){
+        if(Number(arr[i])<5){
+            arr[i]='0'
+        }
+    }
+    for(let i=0;i<x.length;i++){
+        if(Number(arr[i]>5||arr[i]==5)){
+            arr[i]='1'
+        }
+    }
+    return arr.join('')
+}
 
 
 //----------------------------------------------------30
