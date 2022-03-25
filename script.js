@@ -233,6 +233,8 @@ function countSheeps(arr) {
 	return count;
 }
 
+console.log('sefwef');
+
 
 //----------------------------------------------------26
 function areYouPlayingBanjo(name) {
@@ -266,6 +268,16 @@ function orderFood(list) {
 
 
 //----------------------------------------------------28
+function makeNegative(num) {
+	if(num===0){
+		return num
+	}
+	if(num<0){
+		return num
+	}
+	return num=num*(-1)
+}
+
 
 
 //----------------------------------------------------29
