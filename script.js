@@ -230,7 +230,6 @@ function countSheeps(arr) {
 console.log('sefwef');
 
 
-
 //----------------------------------------------------26
 function areYouPlayingBanjo(name) {
     if (name[0] == 'r' || name[0] == 'R') {
@@ -263,37 +262,36 @@ function orderFood(list) {
 
 //----------------------------------------------------28
 
-<<<<<<< HEAD
 function makeNegative(num) {
-	if(num===0){
-		return num
-	}
-	if(num<0){
-		return num
-	}
-	return num=num*(-1)
+    if (num === 0) {
+        return num
+    }
+    if (num < 0) {
+        return num
+    }
+    return num = num * (-1)
 }
 
 
 function removeSmallest(numbers) {
     let minNum = numbers[0]
-    let newArr123=[]
+    let newArr123 = []
     for (let i = 1; i < numbers.length; i++) {
         if (minNum > numbers[i]) {
-            minNum=numbers[i]
+            minNum = numbers[i]
 
         }
     }
-    let str=numbers.length-newArr123.length
-    let newArr123123=[]
-    for(let i =0;i<str-1;i++){
-        if(str>1){
+    let str = numbers.length - newArr123.length
+    let newArr123123 = []
+    for (let i = 0; i < str - 1; i++) {
+        if (str > 1) {
             newArr123123.push(minNum)
         }
     }
-    for(let j=0;j<numbers.length;j++){
-        if(numbers[j] !==minNum){
-            newArr123=numbers[j]
+    for (let j = 0; j < numbers.length; j++) {
+        if (numbers[j] !== minNum) {
+            newArr123 = numbers[j]
         }
     }
     return newArr123
@@ -301,16 +299,16 @@ function removeSmallest(numbers) {
 
 //----------------------------------------------------29
 
-function fakeBin(x){
-    let arr=x.split('')
-    for(let i=0;i<arr.length;i++){
-        if(Number(arr[i])<5){
-            arr[i]='0'
+function fakeBin(x) {
+    let arr = x.split('')
+    for (let i = 0; i < arr.length; i++) {
+        if (Number(arr[i]) < 5) {
+            arr[i] = '0'
         }
     }
-    for(let i=0;i<x.length;i++){
-        if(Number(arr[i]>5||arr[i]==5)){
-            arr[i]='1'
+    for (let i = 0; i < x.length; i++) {
+        if (Number(arr[i] > 5 || arr[i] == 5)) {
+            arr[i] = '1'
         }
     }
     return arr.join('')
@@ -320,14 +318,23 @@ function fakeBin(x){
 //----------------------------------------------------30
 
 function testEven(n) {
-    if(n%2==0||n===0){
+    if (n % 2 == 0 || n === 0) {
         return true
-    }else{
+    } else {
         return false
     }
 
 }
+
 //----------------------------------------------------31
+
+function repeatStr(n, s) {
+    let arrS=s.split('')
+    for(let i=0;i<n-1;i++){
+        arrS.push(s)
+    }
+    return arrS.join('')
+}
 
 
 //----------------------------------------------------32
