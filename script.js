@@ -268,6 +268,7 @@ function orderFood(list) {
 
 
 //----------------------------------------------------28
+
 function makeNegative(num) {
 	if(num===0){
 		return num
