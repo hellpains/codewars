@@ -228,7 +228,6 @@ function countSheeps(arr) {
 }
 
 
-
 //----------------------------------------------------26
 function areYouPlayingBanjo(name) {
     if (name[0] == 'r' || name[0] == 'R') {
@@ -263,23 +262,23 @@ function orderFood(list) {
 
 function removeSmallest(numbers) {
     let minNum = numbers[0]
-    let newArr123=[]
+    let newArr123 = []
     for (let i = 1; i < numbers.length; i++) {
         if (minNum > numbers[i]) {
-            minNum=numbers[i]
+            minNum = numbers[i]
 
         }
     }
-    let str=numbers.length-newArr123.length
-    let newArr123123=[]
-    for(let i =0;i<str-1;i++){
-        if(str>1){
+    let str = numbers.length - newArr123.length
+    let newArr123123 = []
+    for (let i = 0; i < str - 1; i++) {
+        if (str > 1) {
             newArr123123.push(minNum)
         }
     }
-    for(let j=0;j<numbers.length;j++){
-        if(numbers[j] !==minNum){
-            newArr123=numbers[j]
+    for (let j = 0; j < numbers.length; j++) {
+        if (numbers[j] !== minNum) {
+            newArr123 = numbers[j]
         }
     }
     return newArr123
@@ -287,16 +286,16 @@ function removeSmallest(numbers) {
 
 //----------------------------------------------------29
 
-function fakeBin(x){
-    let arr=x.split('')
-    for(let i=0;i<arr.length;i++){
-        if(Number(arr[i])<5){
-            arr[i]='0'
+function fakeBin(x) {
+    let arr = x.split('')
+    for (let i = 0; i < arr.length; i++) {
+        if (Number(arr[i]) < 5) {
+            arr[i] = '0'
         }
     }
-    for(let i=0;i<x.length;i++){
-        if(Number(arr[i]>5||arr[i]==5)){
-            arr[i]='1'
+    for (let i = 0; i < x.length; i++) {
+        if (Number(arr[i] > 5 || arr[i] == 5)) {
+            arr[i] = '1'
         }
     }
     return arr.join('')
@@ -306,21 +305,24 @@ function fakeBin(x){
 //----------------------------------------------------30
 
 function testEven(n) {
-    if(n%2==0||n===0){
+    if (n % 2 == 0 || n === 0) {
         return true
-    }else{
+    } else {
         return false
     }
 
 }
+
 //----------------------------------------------------31
 
+function smash (words) {
+    return words.join(' ')
+};
 
 //----------------------------------------------------32
 
 
 //----------------------------------------------------33
-
 
 //----------------------------------------------------34
 
