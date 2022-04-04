@@ -317,11 +317,18 @@ function testEven(n) {
 
 function smash(words) {
     return words.join(' ')
-};
-console.log('123')
+}
 
 //----------------------------------------------------32
 
+function getAverage(marks){
+    let num=0;
+    for(let elem of marks){
+        num+=elem
+    }
+    let result =num/marks.length
+    return Math.floor(result)
+}
 
 
 //----------------------------------------------------33
