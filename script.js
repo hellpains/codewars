@@ -315,12 +315,20 @@ function testEven(n) {
 
 //----------------------------------------------------31
 
-function smash (words) {
+function smash(words) {
     return words.join(' ')
 };
 
 //----------------------------------------------------32
 
+function getAverage(marks){
+    let num=0;
+    for(let elem of marks){
+        num+=elem
+    }
+    let result =num/marks.length
+    return Math.floor(result)
+}
 
 //----------------------------------------------------33
 
