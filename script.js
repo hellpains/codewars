@@ -318,7 +318,7 @@ function testEven(n) {
 function smash(words) {
     return words.join(' ')
 };
-
+console.log('123')
 
 //----------------------------------------------------32
 
