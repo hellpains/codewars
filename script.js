@@ -321,22 +321,61 @@ function smash(words) {
 
 //----------------------------------------------------32
 
-function getAverage(marks){
-    let num=0;
-    for(let elem of marks){
-        num+=elem
+function getAverage(marks) {
+    let num = 0;
+    for (let elem of marks) {
+        num += elem
     }
-    let result =num/marks.length
+    let result = num / marks.length
     return Math.floor(result)
 }
 
 
 //----------------------------------------------------33
 
+function gimme(triplet) {
+    let a = triplet[0]
+    let b = triplet[1]
+    let c = triplet[2]
+
+    if (a > b && a < c || a < b && a > c) {
+        return 0
+    }
+    if (b > a && b < c || b < a && b > c) {
+        return 1
+    }
+    if (c > a && c < b || c < a && c > b) {
+        return 2
+    }
+}
+
 //----------------------------------------------------34
 
 
+function solution(nums) {
+    if (nums == undefined) {
+        return []
+    } else {
+        return nums.sort((a, b) => a - b)
+    }
+}
+
+
 //----------------------------------------------------35
+
+let capitals = function (word) {
+    let arr = word.split('')
+    let sumArr = []
+    for (let elem of arr) {
+        let isUpperCase = elem.toUpperCase() == elem;
+        if (isUpperCase === true) {
+            let i=arr.indexOf(elem)
+            sumArr.push(i)
+        }
+    }
+    return sumArr
+};
+
 
 
 //----------------------------------------------------36
