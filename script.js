@@ -369,7 +369,7 @@ let capitals = function (word) {
     for (let elem of arr) {
         let isUpperCase = elem.toUpperCase() == elem;
         if (isUpperCase === true) {
-            let i=arr.indexOf(elem)
+            let i = arr.indexOf(elem)
             sumArr.push(i)
         }
     }
@@ -377,8 +377,21 @@ let capitals = function (word) {
 };
 
 
-
 //----------------------------------------------------36
+
+function twoSum(numbers, target) {
+    for(let i=0;i<numbers.length;i++){
+        for(let j=0;j<numbers.length;j++){
+            if(numbers[i]+numbers[j]===target){
+                if(j===0){
+                    return [i,j+1]
+                }else{
+                    return [i,j]
+                }
+            }
+        }
+    }
+}
 
 
 //----------------------------------------------------37
