@@ -396,6 +396,11 @@ function twoSum(numbers, target) {
 
 //----------------------------------------------------37
 
+function reverseWords(str) {
+    return str.split(' ').reverse().join(' ').split('').reverse().join('')
+}
+
+
 
 //----------------------------------------------------38
 
