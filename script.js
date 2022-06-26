@@ -430,7 +430,7 @@ class Shark extends Animal {
         super(name, age, status);
         this.legs = 0
         this.species = "shark"
-        this.status=status
+        this.status = status
     }
 }
 
@@ -441,6 +441,7 @@ class Cat extends Animal {
         this.species = "cat"
         this.status = status
     }
+
     introduce() {
         return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`;
     }
@@ -453,15 +454,66 @@ class Dog extends Animal {
         this.master = master
         this.legs = 4
         this.species = "dog"
-        this.status=status
+        this.status = status
     }
-    greetMaster () {
+
+    greetMaster() {
         return `Hello ${this.master}`;
     }
 }
 
 
 //----------------------------------------------------39
+var list1 = [
+    {firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'C'},
+    {firstName: 'Anna', lastName: 'R.', country: 'Liechtenstein', continent: 'Europe', age: 52, language: 'JavaScript'},
+    {firstName: 'Ramon', lastName: 'R.', country: 'Paraguay', continent: 'Americas', age: 29, language: 'Ruby'},
+    {firstName: 'George', lastName: 'B.', country: 'England', continent: 'Europe', age: 81, language: 'C'},
+];
+
+function countLanguages(list) {
+    let C = 0
+    let JavaScript = 0
+    let Python = 0
+    let Ruby = 0
+    let Clojure = 0
+    let Java = 0
+    let PHP = 0
+
+    let obj = {}
+    list.map(el => el.language === 'JavaScript' ? JavaScript++ : '')
+    list.map(el => el.language === 'Python' ? Python++ : '')
+    list.map(el => el.language === 'C' ? C++  : '')
+    list.map(el => el.language === 'Clojure' ? Clojure++ : '')
+    list.map(el => el.language === 'Ruby' ? Ruby++ : '')
+    list.map(el => el.language === 'Java' ? Java++ : '')
+    list.map(el => el.language === 'PHP' ? PHP++ : '')
+    if (C !== 0) {
+        obj.C = C
+    }
+    if (JavaScript !== 0) {
+        obj.JavaScript = JavaScript
+    }
+    if (Python !== 0) {
+        obj.Python = Python
+    }
+    if (Ruby !== 0) {
+        obj.Ruby = Ruby
+    }
+    if (Clojure !== 0) {
+        obj.Clojure = Clojure
+    }
+    if (Java !== 0) {
+        obj.Java = Java
+    }
+    if (PHP !== 0) {
+        obj.PHP = PHP
+    }
+
+
+    return obj
+}
+
 
 
 //----------------------------------------------------40
