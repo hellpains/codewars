@@ -396,57 +396,20 @@ function twoSum(numbers, target) {
 
 //----------------------------------------------------37
 
-function reverseWords(str) {
-    return str.split(' ').reverse().join(' ').split('').reverse().join('')
+
+class Person {
+    constructor(myName) {
+        this.name = myName
+    }
+    greet(yourName){
+        return "Hello " + yourName + ", my name is " + this.name;
+    }
+
 }
+
 
 
 //----------------------------------------------------38
-
-// function stringMerge(string1, string2, letter) {
-//     let strSplit1 = string1.split('')
-//     let str1 = '';
-//     for (let elem of strSplit1) {
-//         if (elem !== letter) {
-//             str1 =str1+ elem
-//         }else{
-//             break
-//         }
-//     }
-//
-//     let strSplit2 = string2.split('')
-//     let str2 = '';
-//     for (let i=strSplit2.length-1;i>=0;i--) {
-//         if (strSplit2[i] !== letter) {
-//             str2 =str2+ strSplit2[i]
-//         }else{
-//             break
-//         }
-//     }
-//     str2.split('').reverse().join('')
-//     return str1+letter+str2
-// }
-
-function stringMerge(string1, string2, letter) {
-    let strSplit1 = string1.split('')
-    for(let i=0;i<strSplit1.length;i++){
-        if(strSplit1[i] == letter){
-            strSplit1.splice(i)
-            break
-        }
-    }
-
-    let strSplit2 = string2.split('')
-    for(let i=0;i<strSplit2.length;i++){
-        if(strSplit2[i] == letter){
-           strSplit2.splice(0,i)
-            break
-        }
-    }
-
-    return strSplit1.join('')  +strSplit2.join('')
-}
-
 
 
 //----------------------------------------------------39
