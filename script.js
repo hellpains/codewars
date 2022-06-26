@@ -483,7 +483,7 @@ function countLanguages(list) {
     let obj = {}
     list.map(el => el.language === 'JavaScript' ? JavaScript++ : '')
     list.map(el => el.language === 'Python' ? Python++ : '')
-    list.map(el => el.language === 'C' ? C++  : '')
+    list.map(el => el.language === 'C' ? C++ : '')
     list.map(el => el.language === 'Clojure' ? Clojure++ : '')
     list.map(el => el.language === 'Ruby' ? Ruby++ : '')
     list.map(el => el.language === 'Java' ? Java++ : '')
@@ -515,8 +515,22 @@ function countLanguages(list) {
 }
 
 
-
 //----------------------------------------------------40
+const list2 = [
+    {firstName: 'Daniel', lastName: 'J.', country: 'Aruba', continent: 'Americas', age: 42, language: 'JavaScript'},
+    {firstName: 'Kseniya', lastName: 'T.', country: 'Belarus', continent: 'Europe', age: 22, language: 'JavaScript'},
+    {firstName: 'Hanna', lastName: 'L.', country: 'Hungary', continent: 'Europe', age: 65, language: 'JavaScript'},
+    {firstName: 'Hanna', lastName: 'L.', country: 'Hungary', continent: 'Europe', age: 65, language: 'wef'},
+];
+
+function isSameLanguage(list) {
+    for (let i = 0; i < list.length-1; i++) {
+        if (!(list[i].language == list[i + 1].language)) {
+            return false
+        }
+    }
+    return true
+}
 
 
 //----------------------------------------------------41
